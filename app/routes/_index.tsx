@@ -136,7 +136,7 @@ export default function Index() {
 					<label htmlFor="generated-password">Password</label>
 					<div className="flex gap-2">
 						<input id="generated-password" value={password} />
-						<button onClick={copyToClipboard} disabled={!password} className="border-2 border-black">
+						<button onClick={copyToClipboard} disabled={!password}>
 							{copied ? <CheckIcon /> : <CopyIcon />}
 						</button>
 					</div>
@@ -175,7 +175,7 @@ export default function Index() {
 								id="exclude"
 							/>
 						</div>
-						<button type="submit" className="bg-purple-800 px-4 py-2 rounded-full">Generate</button>
+						<button type="submit" className="bg-purple-800 px-4 py-2 rounded-full text-white">Generate</button>
 					</form>
 				</div>
 			</div>
