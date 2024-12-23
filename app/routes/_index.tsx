@@ -135,7 +135,7 @@ export default function Index() {
 				<div className="flex flex-col gap-2">
 					<label htmlFor="generated-password">Password</label>
 					<div className="flex gap-2">
-						<input id="generated-password" value={password} />
+						<input id="generated-password" className="border-2 p-2 rounded-full" value={password} />
 						<button onClick={copyToClipboard} disabled={!password}>
 							{copied ? <CheckIcon /> : <CopyIcon />}
 						</button>
@@ -150,7 +150,7 @@ export default function Index() {
 					>
 						<div className="flex flex-col gap-2">
 							<label htmlFor="length">Password Length</label>
-							<input type="number" id="length" defaultValue={12} min={8} />
+							<input type="number" id="length" className="border-2 p-2 rounded-full" defaultValue={12} min={8} />
 						</div>
 						<Checkbox
 							id="uppercase"
@@ -173,6 +173,7 @@ export default function Index() {
 							<input
 								type="text"
 								id="exclude"
+								className="border-2 p-2 rounded-full"
 							/>
 						</div>
 						<button type="submit" className="bg-purple-800 px-4 py-2 rounded-full text-white">Generate</button>
