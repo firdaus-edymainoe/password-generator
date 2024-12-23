@@ -179,6 +179,9 @@ export default function Index() {
 					</form>
 				</div>
 			</div>
+			<div>
+				<p>Open sourced on <a className="underline" href="https://github.com/firdaus-edymainoe/password-generator" target="_blank" rel="noreferrer">GitHub</a></p>
+			</div>
 		</div>
 	);
 }
