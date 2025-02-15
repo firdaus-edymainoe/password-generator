@@ -127,7 +127,7 @@ export default function Index() {
 	};
 
 	return (
-		<div className="flex flex-col gap-8 h-screen items-center justify-center">
+		<div className="flex flex-col gap-8 h-svh items-center justify-center">
 			<div>
 				<header>Random Password Generator</header>
 			</div>
